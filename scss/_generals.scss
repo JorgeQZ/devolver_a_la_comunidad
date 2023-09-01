@@ -1,0 +1,283 @@
+/** Font Face **/
+@font-face {
+    font-family: 'HelveticaNeue BlackCond';
+    src: url('../fonts/HelveticaNeue-BlackCond.eot');
+    src: url('../fonts/HelveticaNeue-BlackCond.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeue-BlackCond.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-BlackCond.woff') format('woff'),
+        url('../fonts/HelveticaNeue-BlackCond.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url('../fonts/HelveticaNeueLTStd-Cn.eot');
+    src: url('../fonts/HelveticaNeueLTStd-Cn.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueLTStd-Cn.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueLTStd-Cn.woff') format('woff'),
+        url('../fonts/HelveticaNeueLTStd-Cn.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeue-CondensedBold.eot');
+    src: url('../fonts/HelveticaNeue-CondensedBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeue-CondensedBold.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-CondensedBold.woff') format('woff'),
+        url('../fonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+$H_NEUE_CondBold: 'Helvetica Neue';
+$H_NEUE_STD: 'Helvetica Neue LT Std';
+$H_NEUE_BlackCond: 'HelveticaNeue BlackCond';
+
+$text_size: 18px;
+/** COLORES **/
+$gradient-color: #f98627;
+$main-color: #f96404;
+$text-color: #333333;
+
+/** Generals **/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $H_NEUE_STD, Helvetica, sans-serif;
+}
+
+/** Container **/
+.container {
+    width: 85%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/** HEADER **/
+header {
+    background-image: url(../img/head-bg.jpg);
+    background-position: center;
+    min-height: 30px;
+    padding: 40px 0;
+
+    .container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .thd-logo {
+        margin-right: 20px;
+        width: 6.7%;
+    }
+
+    .logo {
+        width: calc(93% - 20px);
+    }
+}
+
+/** menu **/
+nav {
+    background-color: #fff;
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background: #f98627;
+        background: linear-gradient(0deg, #fff 0%, $gradient-color 40%, $gradient-color 100%);
+
+        li {
+            width: 16.30%;
+            max-width: 250px;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+
+            &.current {
+                a {
+                    color: $main-color;
+                }
+            }
+
+            a {
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16px;
+                text-decoration: none;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: $H_NEUE_CondBold;
+                color: $text-color;
+
+            }
+        }
+    }
+}
+
+/** BODY **/
+body {
+    background-image: url(../img/body-bg.jpg);
+    background-size: auto;
+}
+
+p {
+    font-size: 18px;
+}
+
+/** TITULOS **/
+
+$title_2: 38px;
+
+.title {
+    font-size: $title_2;
+    font-family: $H_NEUE_BlackCond;
+    margin-bottom: 40px;
+}
+
+
+.subtitle {
+    font-size: $title_2;
+    font-family: $H_NEUE_STD;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/** FOOTER **/
+footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 15px $main-color solid;
+
+    hr {
+        background-color: #aeaeae;
+        height: 2px;
+    }
+
+    .grid {
+
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 830px;
+        margin: 0 auto;
+        padding-top: 80px;
+
+        .column {
+
+
+            min-height: 40px;
+
+            a {
+                display: block;
+                margin-bottom: 30px;
+                text-decoration: none;
+                font-size: $text_size;
+                color: #000;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+
+        padding: 15px 0;
+
+        .container {
+            display: block;
+        }
+
+        .thd-logo {
+
+            width: 15%;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            width: 95%;
+            display: block;
+
+            margin: 0 auto;
+
+        }
+    }
+
+    nav {
+        background-color: #fff;
+        padding-top: 40px;
+        border-bottom: $main-color 2px solid;
+        position: relative;
+
+        .burguer {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            height: 20px;
+            width: 30px;
+            // border: 1px solid black;
+
+            span {
+                display: block;
+                height: 4px;
+                width: 100%;
+                background-color: $main-color;
+                margin-top: 4px;
+                transition: opacity .3s ease, transform .2s linear;
+            }
+
+            &.active {
+                span {
+                    &:first-child {
+                        transform: translate(0px, 2px) rotateZ(45deg)
+                    }
+
+                    &:last-child {
+                        transform: translate(0px, -6px) rotateZ(-45deg)
+                    }
+
+                }
+            }
+        }
+
+        .menu {
+            display: none;
+            transition: all 300ms;
+            width: 100%;
+
+
+
+            li {
+                width: 100%;
+                max-width: unset;
+
+
+                list-style: none;
+                display: block;
+
+                a {
+                    height: 50px;
+
+                    font-size: 16px;
+
+
+                }
+            }
+        }
+    }
+
+}

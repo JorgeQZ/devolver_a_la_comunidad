@@ -3,13 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/home.css">
   <title>Inicio - Devolver a la comunidad</title>
 </head>
 
 <body>
 
   <header>
-
+    <div class="container">
+      <img src="img/thd-logo.jpg" alt="" class="thd-logo">
+      <img src="img/logo.svg" alt="" class="logo">
+    </div>
   </header>
+  <nav>
+    <div class="burguer">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="container">
+
+      <ul class="menu">
+        <li class="current"><a href="index.html">Inicio</a></li>
+        <li><a href="">Fundación</a></li>
+        <li><a href="">Responsabilidas social</a></li>
+        <li><a href="">Aliados</a></li>
+        <li><a href="">Resultados</a></li>
+        <li><a href="">Informe anual</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Slider -->
+  <div class="owl-carousel owl-theme home-carousel">
+    <div class="item">
+      <img src="img/slider-img-1.jpg" alt="">
+    </div>
+    <div class="item">
+      <img src="img/slider-img-1.jpg" alt="">
+    </div>
+    <div class="item">
+      <img src="img/slider-img-1.jpg" alt="">
+    </div>
+  </div><!-- Slider -->
+
+  <div class="container compromiso">
+    <h2 class="title">
+      NUESTRO COMPROMISO
+    </h2>
+    <p>
+      Desde nuestra llegada a México en 2001, nuestro principal objetivo ha sido mantener un firme compromiso de contribuir al desarrollo de las comunidades
+      en donde tenemos presencia.
+    </p>
+    <br>
+    <p>
+      Diariamente vivimos el valor de <span style="color: #f98627;">Devolver a la Comunidad</span>, que es nuestro motor para trabajar en equipo con distintas organizaciones a través de nuestros programas.
+    </p>
+  </div>
+
+  <div class="form-cont">
+    <div class="container">
+      <div class="title">
+        ¡Gracias por considerar a The Home Depot México como tu posible aliado!
+      </div>
+      <p class="subtitle">
+        Te invitamos a postular tu proyecto para ingresar a evaluación
+      </p>
+
+      <!-- Formulario -->
+      <section class="custom-login">
+        <div id="divIngresar ">
+          <div class="panel-heading ">
+            <div class="panel-title"><strong>INGRESAR </strong></div>
+          </div>
+
+          <div class="panel-body ">
+            <form data-toggle="validator " role="form " name="formaLogin " id="formaLogin " method="GET ">
+
+              <div class="form-group">
+                <label for="txtrfc " class="control-label " id="lblrfc ">*RFC (Una vez registrado usar RFC como usuario de acceso)</label>
+                <input type="text " id="txtrfc " name="rfcLog " class="form-control " data-error="Campo obligatorio. " required />
+                <div class="help-block with-errors "></div>
+              </div>
+
+              <div class="form-group ">
+                <label for="txtContrasenia " id="lblContrasenia " class="control-label ">*Contraseña</label>
+                <input type="password " id="txtContrasenia " name="contraseniaLog " class="form-control " data-error="Campo obligatorio. " required />
+                <div class="help-block with-errors "></div>
+              </div>
+
+              <div class="button-group">
+                <button id="btnRegistrar " class="btn btn-warning btn-md " onclick="registrar();return false; ">Registrate</button>
+
+                <input type="submit " id="btnIngresar " value="Ingresar " class="btn btn-primary " onclick="ValidacionPassword(); return false; " />
+              </div>
+            </form>
+
+          </div>
+
+          <p class="form-sub-text">
+            En caso de que ya cuentes con tu usuario y contraseña, ingresa directamente <br>y solo actualiza los documentos que te solicita el sistema.
+          </p>
+        </div>
+      </section>
+      <!-- Formulario -->
+
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="container">
+      <hr>
+      <div class="grid">
+        <div class="column">
+          <a href="">Inicio</a>
+          <a href="">Fundacion</a>
+        </div>
+        <div class="column">
+          <a href="">Responsabilidad Social</a>
+          <a href="">Aliados</a>
+        </div>
+        <div class="column">
+          <a href="">Resultados</a>
+          <a href="">Informe Anual</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/thd.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      items: 1
+
+    });
+  </script>
 </body>
 </html>
