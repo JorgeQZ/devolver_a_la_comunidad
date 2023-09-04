@@ -62,7 +62,9 @@ $text-color: #333333;
 /** HEADER **/
 header {
     background-image: url(../img/head-bg.jpg);
-    background-position: center;
+    background-size: cover;
+    background-position: start;
+    background-attachment: scroll;
     min-height: 30px;
     padding: 40px 0;
 
