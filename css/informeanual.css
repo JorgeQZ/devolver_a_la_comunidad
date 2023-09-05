@@ -221,98 +221,94 @@ footer .grid .column a {
     font-size: 16px;
   }
 }
-.home-carousel .item {
-  background-color: black;
-  border-bottom: 7px #f96404 solid;
-}
-.home-carousel .item img {
-  opacity: 0.8;
+.contenedor-general-banner img {
+  width: 100%;
+  height: auto;
 }
 
-.compromiso {
-  padding: 80px 0;
+.contenedor-general-informes {
+  padding: 60px 0 75px;
+  position: relative;
+  overflow: hidden;
 }
-
-.form-cont {
-  background-image: url(../img/form-bg.jpg);
-  padding: 100px 0;
+.contenedor-general-informes .dec-circulos {
+  position: absolute;
+  right: -3.5px;
+  bottom: 25%;
+  width: 50px;
+  pointer-events: none;
+  z-index: -1;
 }
-.form-cont .title {
-  color: #fff;
+.contenedor-general-informes .contenedor-titulo {
+  margin-bottom: 5px;
+}
+.contenedor-general-informes .contenedor-titulo h2 {
+  color: #ff7e00;
+  font-size: 31px;
+  font-family: "Helvetica Neue";
+  text-align: center;
+  margin: 0;
+}
+.contenedor-general-informes .contenedor-informes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+.contenedor-general-informes .contenedor-informes .cont-informe {
+  width: 32%;
+  background: #f05c04;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+  transition: all 0.3s;
+}
+.contenedor-general-informes .contenedor-informes .cont-informe img {
+  width: 100%;
+}
+.contenedor-general-informes .contenedor-informes .cont-informe .cont-info {
+  padding: 30px;
+  position: absolute;
+  text-align: center;
+}
+.contenedor-general-informes .contenedor-informes .cont-informe .cont-info h2 {
+  color: white;
   font-size: 38px;
   font-family: "Helvetica Neue";
-  margin-bottom: 0;
-  text-align: center;
+  margin: 0;
 }
-.form-cont .subtitle {
-  color: #fff;
-}
-.form-cont .panel-title {
-  text-align: center;
-  color: #fff;
+.contenedor-general-informes .contenedor-informes .cont-informe .cont-info h2 span {
+  font-size: 50px;
   font-family: "Helvetica Neue";
-  font-size: 28px;
-  margin-bottom: 20px;
-  font-weight: bold;
 }
-.form-cont .panel-body {
-  margin-bottom: 60px;
+.contenedor-general-informes .contenedor-informes .cont-informe .cont-info p {
+  margin: 0;
+  color: white;
+  position: relative;
+  padding: 10px 20px 0;
 }
-.form-cont .form-group {
-  max-width: 734px;
-  margin: 0 auto;
-  width: 80%;
-  margin-bottom: 20px;
+.contenedor-general-informes .contenedor-informes .cont-informe .cont-info p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background: white;
 }
-.form-cont .form-group label {
-  color: #fff;
-  font-size: 18px;
-  text-align: center;
-  display: block;
+.contenedor-general-informes .contenedor-informes .cont-informe:hover {
+  transform: scale(0.95);
 }
-.form-cont .form-group input {
-  display: block;
-  width: 90%;
-  max-width: 734px;
-  height: 50px;
-  border: none;
-  margin: 0 auto;
-  box-sizing: border-box;
-  font-size: 18px;
-  padding: 10px;
-}
-.form-cont .button-group {
-  max-width: 734px;
-  margin: 0 auto;
-  width: 80%;
-  margin-bottom: 20px;
-  padding: 0 3.4%;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.form-cont .button-group button,
-.form-cont .button-group input {
-  background-color: #000;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: none;
-  color: #fff;
-  height: 50px;
-  text-align: center;
-  width: 48%;
-  max-width: 330px;
-  font-size: 24px;
-  text-transform: uppercase;
-  line-height: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.form-cont .form-sub-text {
-  color: #fff;
-  text-align: center;
-  font-size: 26px;
+
+@media screen and (max-width: 767px) {
+  .contenedor-general-informes .contenedor-informes {
+    flex-direction: column;
+  }
+  .contenedor-general-informes .contenedor-informes .cont-informe {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contenedor-general-informes .contenedor-informes .cont-informe:last-of-type {
+    margin-bottom: 0;
+  }
 }

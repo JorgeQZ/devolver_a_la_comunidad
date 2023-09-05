@@ -44,6 +44,7 @@ $text_size: 18px;
 $gradient-color: #f98627;
 $main-color: #f96404;
 $text-color: #333333;
+$naranja-claro: #ff7e00;
 
 /** Generals **/
 * {
@@ -145,6 +146,10 @@ p {
     img {
         width: 100%;
     }
+}
+
+img{
+    display: block;
 }
 
 /** TITULOS **/
