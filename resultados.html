@@ -104,15 +104,15 @@
   <div class="container">
 
     <!-- 2022 -->
-    <div class="facts-shapes">
-      <div class="item year">
+    <div class="facts-shapes owl-carousel owl-theme  slider-2022">
+      <div data-merge="2" class="item year">
         <img src="img/gray-shape.svg" alt="">
         <div class="text">
           2022
         </div>
 
       </div>
-      <div class="item">
+      <div data-merge="1" class="item">
         <img src="img/third-shape.svg" alt="">
         <div class="text">
           <p>
@@ -125,7 +125,7 @@
           <img src="img/icon-pintura.png" alt="">
         </div>
       </div>
-      <div class="item">
+      <div data-merge="1" class="item">
         <img src="img/second-shape.svg" alt="">
         <div class="text">
           <p>
@@ -138,7 +138,7 @@
           <img src="img/icon-fondos.png" alt="">
         </div>
       </div>
-      <div class="item last">
+      <div data-merge="1" class="item last">
         <img src="img/last-shape.svg" alt="">
         <div class="text">
           <p>
@@ -155,8 +155,8 @@
     <hr class="orange">
 
     <!-- 2021 -->
-    <div class="facts-shapes alt">
-      <div class="item last">
+    <div class="facts-shapes alt owl-carousel owl-theme  slider-2021">
+      <div class="item last" data-merge="1">
         <img src="img/last-alt.svg" alt="">
         <div class="text">
           <p>
@@ -170,7 +170,7 @@
           <img src="img/icon-pintura.png" alt="">
         </div>
       </div>
-      <div class="item">
+      <div class="item" data-merge="1">
         <img src="img/shape-alt.svg" alt="">
         <div class=" text">
           <p>
@@ -183,10 +183,8 @@
           <img src="img/icon-fondos.png" alt="">
         </div>
       </div>
-
-
-      <div class="item year">
-        <img src="img/gray-shape-alt.svg" alt="">
+      <div class="item year" data-merge="2">
+        <img src=" img/gray-shape-alt.svg" alt="">
         <div class="text">
           2021
         </div>
@@ -198,15 +196,14 @@
     <hr class="orange">
 
     <!-- 2020 -->
-
-    <div class="facts-shapes">
-      <div class="item year">
+    <div class="facts-shapes owl-carousel owl-theme  slider-2020">
+      <div class="item year" data-merge="2">
         <img src="img/gray-shape.svg" alt="">
         <div class="text">
           2020
         </div>
       </div>
-      <div class="item">
+      <div class="item" data-merge="1">
         <img src="img/third-shape.svg" alt="">
         <div class="text">
           <p>
@@ -219,8 +216,7 @@
           <img src="img/icon-pintura.png" alt="">
         </div>
       </div>
-
-      <div class="item last">
+      <div class="item last" data-merge="1">
         <img src="img/last-shape.svg" alt="">
         <div class="text">
           <p>
@@ -258,6 +254,87 @@
 
   <script src="js/jquery.js"></script>
   <script src="js/thd.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $('.slider-2022').owlCarousel({
+
+      autoWidth: true,
+
+      merge: true,
+      mergeFit: true,
+
+      responsive: {
+        320: {
+          items: 1,
+          mergeFit: false,
+          center: true,
+          autoWidth: false
+
+        }, 1024: {
+          items: 5,
+          autoWidth: true,
+          merge: true,
+          mergeFit: true,
+
+        }
+      }
+
+
+    });
+
+    $('.slider-2021').owlCarousel({
+
+
+      autoWidth: true,
+
+      merge: true,
+      mergeFit: true,
+
+      responsive: {
+        320: {
+          items: 1,
+          mergeFit: false,
+          center: true,
+          autoWidth: false
+
+        }, 1024: {
+          items: 5,
+          autoWidth: true,
+          merge: true,
+          mergeFit: true,
+
+        }
+      }
+
+
+
+    });
+
+    $('.slider-2020').owlCarousel({
+
+      autoWidth: true,
+
+      merge: true,
+      mergeFit: true,
+
+      responsive: {
+        320: {
+          items: 1,
+          mergeFit: false,
+          center: true,
+          autoWidth: false
+
+        }, 1024: {
+          items: 5,
+          autoWidth: true,
+          merge: true,
+          mergeFit: true,
+
+        }
+      }
+
+    });
+  </script>
 
 </body>
 </body>
