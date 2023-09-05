@@ -59,23 +59,23 @@
                 <h2>PROGRAMAS</h2>
             </div>
             <div class="contenedor-programas">
-                <div class="programa">
+                <a href="#ayudaendesastresnaturales" class="programa">
                     <img src="img/programa1.jpg" alt="">
-                </div>
-                <div class="programa">
-                    <img src="img/programa1.jpg" alt="">
-                </div>
-                <div class="programa">
-                    <img src="img/programa1.jpg" alt="">
-                </div>
-                <div class="programa">
-                    <img src="img/programa1.jpg" alt="">
-                </div>
+                </a>
+                <a href="#donaciondemercancia" class="programa">
+                    <img src="img/programa2.jpg" alt="">
+                </a>
+                <a href="#donaciondepintura" class="programa">
+                    <img src="img/programa3.jpg" alt="">
+                </a>
+                <a href="#unidosporunamismacausa" class="programa">
+                    <img src="img/programa4.jpg" alt="">
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="contenedor-general-informacion">
+    <section id="ayudaendesastresnaturales" class="contenedor-general-informacion">
         <img class="dec-circulos" src="img/circulos-dec.png" alt="">
         <div class="container">
             <div class="contenedor-informacion">
@@ -102,7 +102,7 @@
         </div>
     </section>
 
-    <section class="contenedor-general-informacion">
+    <section id="donaciondemercancia" class="contenedor-general-informacion">
         <img class="dec-circulos-izq" src="img/circulos-dec.png" alt="">
         <div class="container">
             <div class="contenedor-informacion">
@@ -148,7 +148,7 @@
         </div>
     </section>
 
-    <section class="contenedor-general-informacion">
+    <section id="donaciondepintura" class="contenedor-general-informacion">
         <img class="dec-pintura" src="img/pintura-dec.png" alt="">
         <div class="container">
             <div class="contenedor-informacion">
@@ -194,7 +194,7 @@
         </div>
     </section>
 
-    <section class="contenedor-general-informacion">
+    <section id="unidosporunamismacausa" class="contenedor-general-informacion">
         <img class="dec-pintura-izq" src="img/pintura2-dec.png" alt="">
         <div class="container">
             <div class="contenedor-informacion">
@@ -226,4 +226,17 @@
     </section>
 
 </body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.contenedor-general-programas .contenedor-programas .programa').click(function(){
+            $('html, body').animate({
+                scrollTop: $( $(this).attr('href') ).offset().top
+            }, 500);
+            return false;
+        });
+    });
+</script>
+
 </html>

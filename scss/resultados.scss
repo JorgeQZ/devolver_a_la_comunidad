@@ -1,0 +1,202 @@
+@import "generals";
+
+
+p.title {
+    font-family: $H_NEUE_STD;
+    margin-top: 80px;
+
+    strong {
+        font-family: $H_NEUE_BlackCond;
+    }
+}
+
+.facts-cont {
+    background-image: url(../img/mancha-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+
+    .grid {
+        max-width: 800px;
+        margin: 0 auto;
+
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .item {
+            width: 30%;
+            min-width: 200px;
+            min-height: 30px;
+            margin: 10px auto;
+
+            .white-sqr {
+                width: 100%;
+                min-height: 40px;
+                background-color: #fff;
+                border-radius: 20px;
+                font-family: $H_NEUE_BlackCond;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $gradient-color;
+                line-height: 1;
+                font-size: 34px;
+                padding: 30px 0;
+
+                small {
+                    padding-top: 2px;
+                    margin-left: 4px;
+                    font-family: $H_NEUE_BlackCond;
+
+                }
+
+            }
+
+            .desc {
+                margin-top: 10px;
+                display: flex;
+                align-items: start;
+                justify-content: center;
+
+                .icon {
+                    width: 48px;
+                    margin-right: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        max-height: 35px;
+                        width: auto;
+                        margin-top: 5px;
+                    }
+                }
+
+                .text {
+                    text-transform: uppercase;
+                    font-size: $text_size;
+                    color: #fff;
+                    line-height: 1.2;
+                    width: fit-content;
+                    font-family: $H_NEUE_CondBold;
+                }
+            }
+        }
+    }
+}
+
+.facts-shapes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+
+
+    .item {
+        position: relative;
+        height: 150px;
+        margin-right: -50px;
+
+
+        &.year {
+
+            .text {
+                font-size: 56px;
+                color: #7d7d7d;
+            }
+        }
+
+        &.last {
+            p {
+                padding-left: 25px;
+
+            }
+        }
+
+        img {
+            // position: absolute;
+            top: 0;
+            height: 150px;
+            transition: all 300ms;
+
+        }
+
+        .text {
+            top: 0;
+            right: 0;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $H_NEUE_CondBold;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            color: #fff;
+
+
+            p {
+                font-family: $H_NEUE_CondBold;
+                line-height: 1;
+                font-size: 16px;
+
+                span {
+                    font-size: 24px;
+                    font-family: $H_NEUE_CondBold;
+                    display: block;
+                }
+            }
+
+
+        }
+
+        .icon {
+            width: 30px;
+            position: absolute;
+            top: 12px;
+            left: 35px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    &.alt {
+        margin-left: -50px;
+        margin-right: 0px;
+
+
+        & .last {
+
+
+            p {
+                padding-left: 0px;
+                padding-right: 25px;
+            }
+        }
+
+        .icon {
+            left: unset;
+            right: 40px;
+        }
+
+
+
+
+    }
+}
+
+hr.orange {
+    height: 1px;
+    background-color: $main-color;
+    border: none;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 90%;
+}

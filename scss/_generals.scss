@@ -63,7 +63,9 @@ $naranja-claro: #ff7e00;
 /** HEADER **/
 header {
     background-image: url(../img/head-bg.jpg);
-    background-position: center;
+    background-size: cover;
+    background-position: start;
+    background-attachment: scroll;
     min-height: 30px;
     padding: 40px 0;
 
@@ -133,7 +135,17 @@ body {
 }
 
 p {
-    font-size: 18px;
+    font-size: $text_size;
+
+}
+
+
+
+/* BANNERS */
+.banner-cont {
+    img {
+        width: 100%;
+    }
 }
 
 img{

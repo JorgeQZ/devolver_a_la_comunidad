@@ -42,7 +42,9 @@
 /** HEADER **/
 header {
   background-image: url(../img/head-bg.jpg);
-  background-position: center;
+  background-size: cover;
+  background-position: start;
+  background-attachment: scroll;
   min-height: 30px;
   padding: 40px 0;
 }
@@ -103,6 +105,11 @@ body {
 
 p {
   font-size: 18px;
+}
+
+/* BANNERS */
+.banner-cont img {
+  width: 100%;
 }
 
 img {
@@ -272,6 +279,7 @@ footer .grid .column a {
 .contenedor-general-programas .contenedor-programas .programa {
   width: 21.5%;
   position: relative;
+  transition: all 0.3s;
 }
 .contenedor-general-programas .contenedor-programas .programa img {
   width: 100%;
@@ -288,6 +296,9 @@ footer .grid .column a {
 }
 .contenedor-general-programas .contenedor-programas .programa:last-of-type::before {
   display: none;
+}
+.contenedor-general-programas .contenedor-programas .programa:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
 }
 
 .contenedor-general-informacion {
@@ -368,6 +379,10 @@ footer .grid .column a {
 .contenedor-general-informacion .contenedor-informacion ul li a {
   color: #ff7e00;
   font-family: "Helvetica Neue";
+  transition: all 0.3s;
+}
+.contenedor-general-informacion .contenedor-informacion ul li a:hover {
+  opacity: 0.7;
 }
 .contenedor-general-informacion .contenedor-informacion ul li span {
   color: #ff7e00;
@@ -424,6 +439,10 @@ footer .grid .column a {
 .contenedor-general-importante .contenedor-importante ul li a {
   color: white;
   font-family: "Helvetica Neue";
+  transition: all 0.3s;
+}
+.contenedor-general-importante .contenedor-importante ul li a:hover {
+  opacity: 0.7;
 }
 .contenedor-general-importante .contenedor-importante ul li::before {
   content: "•";

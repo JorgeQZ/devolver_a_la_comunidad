@@ -1,0 +1,88 @@
+@import "generals";
+
+.title {
+    text-align: center;
+    color: $main-color;
+}
+
+
+.item {
+    hr {
+        background-color: $main-color;
+        height: 1px;
+        border: none;
+
+    }
+
+    .grid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px 0;
+
+        .column {
+            &:first-child {
+                width: 55%;
+            }
+
+            &:last-child {
+                width: 45%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            p {
+                max-width: 750px;
+            }
+
+            img {
+                max-width: 380px;
+                max-height: 250px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &.alt {
+        .grid {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .item {
+        .grid {
+            padding: 40px 0;
+            flex-direction: column;
+
+            .column {
+                &:first-child {
+                    width: 100%;
+                }
+
+                &:last-child {
+                    width: 100%;
+                    padding: 20px 0;
+                }
+
+                p {
+                    max-width: 750px;
+                }
+
+                img {
+                    width: 80%;
+                    margin: 0 auto;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        &.alt {
+            .grid {
+                flex-direction: column;
+            }
+        }
+    }
+}

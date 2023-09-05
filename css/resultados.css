@@ -221,98 +221,157 @@ footer .grid .column a {
     font-size: 16px;
   }
 }
-.home-carousel .item {
-  background-color: black;
-  border-bottom: 7px #f96404 solid;
+p.title {
+  font-family: "Helvetica Neue LT Std";
+  margin-top: 80px;
 }
-.home-carousel .item img {
-  opacity: 0.8;
-}
-
-.compromiso {
-  padding: 80px 0;
+p.title strong {
+  font-family: "HelveticaNeue BlackCond";
 }
 
-.form-cont {
-  background-image: url(../img/form-bg.jpg);
-  padding: 100px 0;
+.facts-cont {
+  background-image: url(../img/mancha-bg.png);
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
 }
-.form-cont .title {
-  color: #fff;
-  font-size: 38px;
-  font-family: "Helvetica Neue";
-  margin-bottom: 0;
-  text-align: center;
-}
-.form-cont .subtitle {
-  color: #fff;
-}
-.form-cont .panel-title {
-  text-align: center;
-  color: #fff;
-  font-family: "Helvetica Neue";
-  font-size: 28px;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-.form-cont .panel-body {
-  margin-bottom: 60px;
-}
-.form-cont .form-group {
-  max-width: 734px;
+.facts-cont .grid {
+  max-width: 800px;
   margin: 0 auto;
-  width: 80%;
-  margin-bottom: 20px;
-}
-.form-cont .form-group label {
-  color: #fff;
-  font-size: 18px;
-  text-align: center;
-  display: block;
-}
-.form-cont .form-group input {
-  display: block;
-  width: 90%;
-  max-width: 734px;
-  height: 50px;
-  border: none;
-  margin: 0 auto;
-  box-sizing: border-box;
-  font-size: 18px;
-  padding: 10px;
-}
-.form-cont .button-group {
-  max-width: 734px;
-  margin: 0 auto;
-  width: 80%;
-  margin-bottom: 20px;
-  padding: 0 3.4%;
-  box-sizing: border-box;
+  min-height: 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-.form-cont .button-group button,
-.form-cont .button-group input {
-  background-color: #000;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: none;
-  color: #fff;
-  height: 50px;
-  text-align: center;
-  width: 48%;
-  max-width: 330px;
-  font-size: 24px;
-  text-transform: uppercase;
-  line-height: 1;
+.facts-cont .grid .item {
+  width: 30%;
+  min-width: 200px;
+  min-height: 30px;
+  margin: 10px auto;
+}
+.facts-cont .grid .item .white-sqr {
+  width: 100%;
+  min-height: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  font-family: "HelveticaNeue BlackCond";
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  color: #f98627;
+  line-height: 1;
+  font-size: 34px;
+  padding: 30px 0;
 }
-.form-cont .form-sub-text {
+.facts-cont .grid .item .white-sqr small {
+  padding-top: 2px;
+  margin-left: 4px;
+  font-family: "HelveticaNeue BlackCond";
+}
+.facts-cont .grid .item .desc {
+  margin-top: 10px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.facts-cont .grid .item .desc .icon {
+  width: 48px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.facts-cont .grid .item .desc .icon img {
+  max-height: 35px;
+  width: auto;
+  margin-top: 5px;
+}
+.facts-cont .grid .item .desc .text {
+  text-transform: uppercase;
+  font-size: 18px;
   color: #fff;
+  line-height: 1.2;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Helvetica Neue";
+}
+
+.facts-shapes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+}
+.facts-shapes .item {
+  position: relative;
+  height: 150px;
+  margin-right: -50px;
+}
+.facts-shapes .item.year .text {
+  font-size: 56px;
+  color: #7d7d7d;
+}
+.facts-shapes .item.last p {
+  padding-left: 25px;
+}
+.facts-shapes .item img {
+  top: 0;
+  height: 150px;
+  transition: all 300ms;
+}
+.facts-shapes .item .text {
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Helvetica Neue";
+  width: 100%;
+  height: 100%;
   text-align: center;
-  font-size: 26px;
+  color: #fff;
+}
+.facts-shapes .item .text p {
+  font-family: "Helvetica Neue";
+  line-height: 1;
+  font-size: 16px;
+}
+.facts-shapes .item .text p span {
+  font-size: 24px;
+  font-family: "Helvetica Neue";
+  display: block;
+}
+.facts-shapes .item .icon {
+  width: 30px;
+  position: absolute;
+  top: 12px;
+  left: 35px;
+}
+.facts-shapes .item .icon img {
+  width: 100%;
+  height: auto;
+}
+.facts-shapes.alt {
+  margin-left: -50px;
+  margin-right: 0px;
+}
+.facts-shapes.alt .last p {
+  padding-left: 0px;
+  padding-right: 25px;
+}
+.facts-shapes.alt .icon {
+  left: unset;
+  right: 40px;
+}
+
+hr.orange {
+  height: 1px;
+  background-color: #f96404;
+  border: none;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 90%;
 }
