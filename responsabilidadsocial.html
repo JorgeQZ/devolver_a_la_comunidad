@@ -6,6 +6,7 @@
     <title>Fundación - Responsabilidad Social</title>
     <link rel="stylesheet" href="css/responsabilidadsocial.css">
 </head>
+
 <body>
 
     <header>
@@ -20,14 +21,14 @@
             <span></span>
         </div>
         <div class="container">
-    
+
             <ul class="menu">
-                <li class="current"><a href="index.html">Inicio</a></li>
-                <li><a href="">Fundación</a></li>
-                <li><a href="">Responsabilidas social</a></li>
-                <li><a href="">Aliados</a></li>
-                <li><a href="">Resultados</a></li>
-                <li><a href="">Informe anual</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="fundacion.html">Fundación</a></li>
+                <li class="current"><a href="responsabilidadsocial.html">Responsabilidas social</a></li>
+                <li><a href="aliados.html">Aliados</a></li>
+                <li><a href="resultados.html">Resultados</a></li>
+                <li><a href="informeanual.html">Informe anual</a></li>
             </ul>
         </div>
     </nav>
@@ -78,7 +79,7 @@
                         </p>
                         <h3>¿Cómo solicitar apoyo?</h3>
                         <ul>
-                            <li>Descarga la convocatoria <a href="#" target="_blank">aquí</a></li>
+                            <li>Descarga la convocatoria <a href="files/Convocatoria Colecta Haz Mas Por Los Demas.pptx" target="_blank" download>aquí</a></li>
                             <li>Llénala correctamente</li>
                             <li>Envíala al correo: <a href="mailto:responsabilidad_social@homedepot.com.mx" target="_blank">responsabilidad_social@homedepot.com.mx</a></li>
                         </ul>
@@ -111,7 +112,7 @@
                     Programa de voluntariado a nivel nacional donde nuestros asociados y asociadas dedican su tiempo libre y talento para unirse a un Equipo Depot y generar un impacto positivo en las comunidades donde tenemos presencia.
                 </p>
                 <ul>
-                    <li>Descarga la convocatoria <a href="#" target="_blank">aquí</a></li>
+                    <li>Descarga la convocatoria <a href="files/Convocatoria Equipos Depot.pptx" target="_blank" download>aquí</a></li>
                     <li>Llénala correctamente</li>
                     <li>Envíala al correo: <a href="mailto:responsabilidad_social@homedepot.com.mx" target="_blank">responsabilidad_social@homedepot.com.mx</a></li>
                 </ul>
@@ -127,14 +128,34 @@
         </div>
     </section>
 
+
+    <footer>
+        <div class="container">
+            <hr>
+            <div class="grid">
+                <div class="column">
+                    <a href="index.html">Inicio</a>
+                    <a href="fundacion.html">Fundacion</a>
+                </div>
+                <div class="column">
+                    <a href="responsabilidadsocial.html">Responsabilidad Social</a>
+                    <a href="aliados.html">Aliados</a>
+                </div>
+                <div class="column">
+                    <a href="resultados.html">Resultados</a>
+                    <a href="informeanual.html">Informe Anual</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script>
     $(document).ready(function () {
-        $('.contenedor-general-programas .contenedor-programas .programa').click(function(){
+        $('.contenedor-general-programas .contenedor-programas .programa').click(function () {
             $('html, body').animate({
-                scrollTop: $( $(this).attr('href') ).offset().top
+                scrollTop: $($(this).attr('href')).offset().top
             }, 500);
             return false;
         });
