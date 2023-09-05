@@ -136,6 +136,10 @@ p {
   width: 100%;
 }
 
+img {
+  display: block;
+}
+
 /** TITULOS **/
 .title {
   font-size: 38px;
