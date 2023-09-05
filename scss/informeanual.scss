@@ -1,0 +1,99 @@
+@import "generals";
+
+.contenedor-general-banner{
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.contenedor-general-informes{
+    padding: 60px 0 75px;
+    position: relative;
+    overflow: hidden;
+    .dec-circulos{
+        position: absolute;
+        right: -3.5px;
+        bottom: 25%;
+        width: 50px;
+        pointer-events: none;
+        z-index: -1;
+    }
+    .contenedor-titulo{
+        margin-bottom: 5px;
+        h2{
+            color: $naranja-claro;
+            font-size: 31px;
+            font-family: 'Helvetica Neue';
+            text-align: center;
+            margin: 0;
+        }
+    }
+    .contenedor-informes{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 75px;
+        .cont-informe{
+            width: 32%;
+            background: #f05c04;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+            transition: all .3s;
+            img{
+                width: 100%;
+            }
+            .cont-info{
+                padding: 30px;
+                position: absolute;
+                text-align: center;
+                h2{
+                    color: white;
+                    font-size: 38px;
+                    font-family: 'Helvetica Neue';
+                    margin: 0;
+                    span{
+                        font-size: 50px;
+                        font-family: 'Helvetica Neue';
+                    }
+                }
+                p{
+                    margin: 0;
+                    color: white;
+                    position: relative;
+                    padding: 10px 20px 0;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 2.5px;
+                        background: white;
+                    }
+                }
+            }
+            &:hover{
+                transform: scale(0.95);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    .contenedor-general-informes{
+        .contenedor-informes{
+            flex-direction: column;
+            .cont-informe{
+                width: 100%;
+                margin-bottom: 20px;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+}

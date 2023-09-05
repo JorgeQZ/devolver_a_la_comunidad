@@ -1,0 +1,263 @@
+@import "generals";
+
+.contenedor-general-banner{
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.contenedor-general-descripcion{
+    padding: 55px 0;
+    .contenedor-descripcion{
+        width: 62%;
+        margin: 0 auto;
+        .desc{
+            text-align: center;
+            h2{
+                font-size: 31px;
+                margin: 0;
+                margin-bottom: 20px;
+                span{
+                    font-family: "HelveticaNeue BlackCond";
+                }
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.contenedor-general-programas{
+    padding: 40px;
+    background-image: url(../img/bg-franja.png);
+    background-size: cover;
+    background-position: center;
+    .contenedor-titulo{
+        margin-bottom: 5px;
+        h2{
+            color: white;
+            font-size: 31px;
+            text-align: center;
+            margin: 0;
+        }
+    }
+    .contenedor-programas{
+        display: flex;
+        justify-content: center;
+        .programa{
+            width: 21.5%;
+            margin-right: 40px;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -20.5px;
+                height: 70%;
+                width: 1px;
+                background: white;
+            }
+            &:last-of-type{
+                margin-right: 0;
+                &::before{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.contenedor-general-informacion{
+    margin-top: 35px;
+    position: relative;
+    overflow: hidden;
+    .dec-circulos{
+        position: absolute;
+        right: -3.5px;
+        top: 25%;
+        width: 50px;
+        pointer-events: none;
+        z-index: -1;
+    }
+    .dec-circulos-izq{
+        position: absolute;
+        left: -10.5px;
+        top: -10%;
+        width: 50px;
+        pointer-events: none;
+        z-index: -1;
+    }
+    .dec-pintura{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 63px;
+        pointer-events: none;
+        z-index: -1;
+    }
+    .contenedor-informacion{
+        padding-top: 35px;
+
+        .cont-columnado{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .info{
+                width: 64%;
+            }
+            .media{
+                width: 33%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        > img{
+            display: block;
+            max-width: 330px;
+            width: auto;
+            max-height: 65px;
+            height: auto;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        p{
+            margin: 15px 0;
+            font-size: 16px;
+            strong{
+                font-family: 'Helvetica Neue';
+                color: $naranja-claro;
+            }
+            span{
+                color: $naranja-claro;
+                font-size: 32px;
+                font-family: 'Helvetica Neue';
+            }
+        }
+        h3{
+            font-family: 'Helvetica Neue';
+            color: white;
+            background: $naranja-claro;
+            padding: 5px 12px;
+            display: inline-block;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        ul{
+            list-style: none;
+            padding-left: 15px;
+            li{
+                font-size: 16px;
+                a{
+                    color: $naranja-claro;
+                    font-family: 'Helvetica Neue';
+                }
+                span{
+                    color: $naranja-claro;
+                        font-family: 'Helvetica Neue';
+                }
+                &::before{
+                    content: "\2022";
+                    color: $naranja-claro; 
+                    font-weight: bold; 
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                }
+            }
+        }
+        .galeria{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            img{
+                width: 31.5%;
+                margin: 0;
+            }
+        }
+    }
+    &:last-of-type{
+        padding-bottom: 60px;
+        .contenedor-informacion{
+            border-top: 1px solid $naranja-claro;
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    .contenedor-general-descripcion{
+        .contenedor-descripcion{
+            width: 100%;
+        }
+    }
+
+    .contenedor-general-programas{
+        .contenedor-programas{
+            flex-direction: column;
+            .programa{
+                width: 100%;
+                margin-bottom: 30px;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: inherit;
+                    bottom: -15px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    height: 1px;
+                    width: 100px;
+                    background: white;
+                }
+                &:last-of-type{
+                    margin-bottom: 0;
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedor-general-informacion{
+        .contenedor-informacion{
+
+            .cont-columnado{
+                flex-direction: column;
+                .info{
+                    width: 100%;
+                }
+                .media{
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+
+            > img{
+                max-width: 260px;
+            }
+            .galeria{
+                flex-direction: column;
+                img{
+                    width: 100%;
+                    margin-bottom: 15px;
+                    &:last-of-type{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        &:first-of-type{
+            border: 0;
+        }
+    }
+
+}
