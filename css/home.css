@@ -221,6 +221,27 @@ footer .grid .column a {
     font-size: 16px;
   }
 }
+.contanedor-compromiso {
+  position: relative;
+  overflow: hidden;
+}
+.contanedor-compromiso .dec-pintura {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 28px;
+  pointer-events: none;
+  z-index: -1;
+}
+.contanedor-compromiso .dec-pintura-izq {
+  position: absolute;
+  left: -59px;
+  bottom: -55px;
+  width: 85px;
+  pointer-events: none;
+  z-index: -1;
+}
+
 .home-carousel .item {
   background-color: black;
   border-bottom: 7px #f96404 solid;

@@ -1,5 +1,25 @@
 @import "generals";
 
+.contanedor-compromiso{
+    position: relative;
+    overflow: hidden;
+    .dec-pintura{
+        position: absolute;
+        right: 0;
+        top: 30px;
+        width: 28px;
+        pointer-events: none;
+        z-index: -1;
+    }
+    .dec-pintura-izq{
+        position: absolute;
+        left: -59px;
+        bottom: -55px;
+        width: 85px;
+        pointer-events: none;
+        z-index: -1;
+    }
+}
 
 .home-carousel {
     .item {

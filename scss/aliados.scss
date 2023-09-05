@@ -5,6 +5,66 @@
     color: $main-color;
 }
 
+.contenedor-global-aliados{
+    position: relative;
+    overflow: hidden;
+    .dec-circulos{
+        position: absolute;
+        right: -3.5px;
+        top: 1.5%;
+        width: 50px;
+        pointer-events: none;
+        z-index: -1;
+    }
+    .dec-circulos2{
+        position: absolute;
+        right: -3.5px;
+        top: 64%;
+        width: 50px;
+        pointer-events: none;
+        z-index: -1;
+    }
+    .dec-circulos-izq{
+        position: absolute;
+        left: -10.5px;
+        top: 11.5%;
+        width: 50px;
+        pointer-events: none;
+        z-index: -1;
+    }
+    .dec-pintura{
+        position: absolute;
+        right: 0;
+        top: 36%;
+        width: 63px;
+        pointer-events: none;
+        z-index: -1;
+    }
+    .dec-pintura2{
+        position: absolute;
+        right: 0;
+        bottom: 3%;
+        width: 63px;
+        pointer-events: none;
+        z-index: -1;
+    }
+    .dec-pintura-izq{
+        position: absolute;
+        left: 0;
+        top: 56%;
+        width: 75px;
+        pointer-events: none;
+        z-index: -1;
+    }
+    .dec-circulos-izq2{
+        position: absolute;
+        left: -10.5px;
+        top: 72%;
+        width: 50px;
+        pointer-events: none;
+        z-index: -1;
+    }
+}
 
 .item {
     hr {
