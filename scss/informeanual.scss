@@ -36,13 +36,18 @@
         .cont-informe{
             width: 32%;
             background: #f05c04;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             display: flex;
             align-items: center;
             justify-content: center;
             box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
             transition: all .3s;
+            position: relative;
             img{
                 width: 100%;
+                visibility: hidden;
             }
             .cont-info{
                 padding: 30px;
@@ -76,6 +81,16 @@
             }
             &:hover{
                 transform: scale(0.95);
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #f05c04;
+                opacity: .55;
             }
         }
     }

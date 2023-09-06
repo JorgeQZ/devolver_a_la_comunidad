@@ -48,15 +48,9 @@ header {
   padding: 40px 0;
 }
 header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: flex-end;
+  justify-content: center;
 }
 header .thd-logo {
   margin-right: 20px;
@@ -71,32 +65,19 @@ nav {
   background-color: #fff;
 }
 nav .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
   background: #f98627;
-  background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(40%, #f98627), to(#f98627));
   background: linear-gradient(0deg, #fff 0%, #f98627 40%, #f98627 100%);
 }
 nav .menu li {
   width: 16.3%;
   max-width: 250px;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
 }
 nav .menu li.current a {
@@ -104,15 +85,9 @@ nav .menu li.current a {
 }
 nav .menu li a {
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
   text-decoration: none;
   text-align: center;
@@ -165,21 +140,11 @@ footer hr {
   height: 2px;
 }
 footer .grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
   max-width: 830px;
   margin: 0 auto;
   padding-top: 80px;
@@ -232,22 +197,16 @@ footer .grid .column a {
     width: 100%;
     background-color: #f96404;
     margin-top: 4px;
-    -webkit-transition: opacity 0.3s ease, -webkit-transform 0.2s linear;
-    transition: opacity 0.3s ease, -webkit-transform 0.2s linear;
     transition: opacity 0.3s ease, transform 0.2s linear;
-    transition: opacity 0.3s ease, transform 0.2s linear, -webkit-transform 0.2s linear;
   }
   nav .burguer.active span:first-child {
-    -webkit-transform: translate(0px, 2px) rotateZ(45deg);
-            transform: translate(0px, 2px) rotateZ(45deg);
+    transform: translate(0px, 2px) rotateZ(45deg);
   }
   nav .burguer.active span:last-child {
-    -webkit-transform: translate(0px, -6px) rotateZ(-45deg);
-            transform: translate(0px, -6px) rotateZ(-45deg);
+    transform: translate(0px, -6px) rotateZ(-45deg);
   }
   nav .menu {
     display: none;
-    -webkit-transition: all 300ms;
     transition: all 300ms;
     width: 100%;
   }
@@ -321,21 +280,11 @@ footer .dec-pintura {
   max-width: 800px;
   margin: 0 auto;
   min-height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 .facts-cont .grid .item {
   width: 30%;
@@ -349,15 +298,9 @@ footer .dec-pintura {
   background-color: #fff;
   border-radius: 20px;
   font-family: "HelveticaNeue BlackCond";
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: #f98627;
   line-height: 1;
   font-size: 34px;
@@ -370,28 +313,16 @@ footer .dec-pintura {
 }
 .facts-cont .grid .item .desc {
   margin-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: start;
+  justify-content: center;
 }
 .facts-cont .grid .item .desc .icon {
   width: 48px;
   margin-right: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .facts-cont .grid .item .desc .icon img {
   max-height: 35px;
@@ -403,37 +334,24 @@ footer .dec-pintura {
   font-size: 18px;
   color: #fff;
   line-height: 1.2;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-family: "Helvetica Neue";
 }
 
 .facts-shapes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin: 40px auto;
 }
 .facts-shapes .owl-stage {
   margin: 0 auto;
 }
 .facts-shapes .owl-stage .owl-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .facts-shapes .item {
   position: relative;
@@ -449,22 +367,15 @@ footer .dec-pintura {
 .facts-shapes .item img {
   top: 0;
   height: 150px !important;
-  -webkit-transition: all 300ms;
   transition: all 300ms;
 }
 .facts-shapes .item .text {
   top: 0;
   right: 0;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-family: "Helvetica Neue";
   width: 100%;
   height: 100%;
